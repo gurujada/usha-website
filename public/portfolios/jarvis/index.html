@@ -1,0 +1,797 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Building Jarvis using Python to help people &middot; Congo</title>
+    <meta name="title" content="Building Jarvis using Python to help people &middot; Congo" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.b0785c8131a75f72b211435af86269eb2d4b81dda03a8f2cf5ccb1c967747167.css"
+    integrity="sha256-sHhcgTGnX3KyEUNa&#43;GJp6y1Lgd2gOo8s9cyxyWd0cWc="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      Making a personal Assistant using Python
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/portfolios/jarvis/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Building Jarvis using Python to help people" />
+<meta property="og:description" content="Making a personal Assistant using Python" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/portfolios/jarvis/" /><meta property="og:image" content="http://localhost:1313/portfolios/jarvis/featured.webp" /><meta property="article:section" content="portfolios" />
+<meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-19T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/portfolios/jarvis/featured.webp" /><meta name="twitter:title" content="Building Jarvis using Python to help people"/>
+<meta name="twitter:description" content="Making a personal Assistant using Python"/>
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Portfolios",
+    "name": "Building Jarvis using Python to help people",
+    "headline": "Building Jarvis using Python to help people",
+    "description": "Making a personal Assistant using Python",
+    "abstract": "Personal voice assistant using Python This assistant can open applications, search the web, Youtube, Wikipedia, and search the entire Wolfram Alpha Database for all of your questions.",
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/portfolios\/jarvis\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Vemuru Usha Ramani"
+    },
+    "copyrightYear": "2020",
+    "dateCreated": "2020-01-19T00:00:00\u002b00:00",
+    "datePublished": "2020-01-19T00:00:00\u002b00:00",
+    
+    "dateModified": "2020-01-19T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1556"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Welcome to Blowfish! Tada",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/portfolios/",
+       "name": "Portfolios",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "Building Jarvis Using Python to Help People",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  <meta name="author" content="Vemuru Usha Ramani" />
+  
+    
+      <link href="https://in.linkedin.com/in/usha-ramani-vemuru-66286723" rel="me" />
+    
+      <link href="https://medium.com/@usharamani" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Congo</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/categories/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Categories</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/tags/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Tags</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                
+                
+              
+            </li>
+          
+            
+              
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Building Jarvis using Python to help people
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2020-01-19 00:00:00 &#43;0000 UTC">19 January 2020</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">8 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+        <div class="prose">
+          
+          
+          
+          
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="mb-6 rounded-md"
+      
+    >
+      
+      
+      
+      
+        <source
+          
+            
+              srcset="/portfolios/jarvis/featured_hu68b815bfc007b3e87639b451a0723ebf_14374_602x339_resize_q75_h2_box_2.webp"
+            
+          
+          sizes="100vw"
+          type="image/webp"
+        />
+      
+      <img
+        width="602"
+        height="339"
+        class="mb-6 rounded-md"
+        
+        
+        
+          src="/portfolios/jarvis/featured.webp"
+        
+      />
+    </picture>
+  
+
+
+          
+        </div>
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Table of Contents
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#basic-requirements">Basic Requirements:</a></li>
+        <li><a href="#step-1-installing-the-packages">Step 1: Installing the packages</a></li>
+        <li><a href="#step-2-getting-started-with-the-code">Step 2: Getting started with the code</a></li>
+        <li><a href="#step-3-random-fun">Step 3: Random Fun</a></li>
+        <li><a href="#step-4-doing-the-calculations">Step 4: Doing the Calculations</a></li>
+        <li><a href="#step-5-the-finishing-touch">Step 5: The finishing touch</a></li>
+        <li><a href="#step-6-and-then-youre-done">Step 6: And then you&rsquo;re done!</a></li>
+        <li><a href="#step-8-some-important-things-to-keep-in-mind">Step 8: Some important things to keep in mind</a></li>
+        <li><a href="#step-8-example-commands">Step 8: Example Commands</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h1 id="personal-voice-assistant-using-python" class="relative group">Personal voice assistant using Python </h1><p>This assistant can open applications, search the web, Youtube, Wikipedia, and search the entire Wolfram Alpha Database for all of your questions. It is a stack of simple <code>elif</code> statements which you can customise completely.</p>
+<h3 id="basic-requirements" class="relative group">Basic Requirements: </h3><p>Getting started is pretty simple. There are just three prerequisites and then you are on your way. You&rsquo;re going to need-</p>
+<ul>
+<li><a href="https://www.python.org/downloads/" class="has-text-link">Python 3</a></li>
+<li><a href="https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/" class="has-text-link">Pip 3 </a></li>
+<li>A good text editor such as <a href="https://code.visualstudio.com/download" class="has-text-link">Visual Studio Code</a></li>
+</ul>
+<h3 id="step-1-installing-the-packages" class="relative group">Step 1: Installing the packages </h3><p>There are a few packages to be installed first such as gTTS, pyaudio, playsound etc. Installing them is simple, just run the following commands in the Command Prompt or Terminal.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$:~ pip3 install gTTS 
+</span></span></code></pre></div><p>The above command installs the Google Text To Speech (gTTS) library which will convert whatever we speak into text.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$:~ pip3 install SpeechRecognition
+</span></span></code></pre></div><p>The above command installs the Speech Recognition package which understands our audio and converts it into text.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$:~ pip3 install -U selenium
+</span></span></code></pre></div><p>The above command installs the Selenium Web Driver package that controls and searches the web.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$:~ pip3 install wolfram-alpha-api
+</span></span></code></pre></div><p>The above command installs the Wolfram Alpha Api which calculates everything you ask for.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$:~ pip3 install playsound 
+</span></span></code></pre></div><p>The above command installs the Playsound package which plays the saved audio file from your computer.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$:~ sudo apt-get install python3-pyaudio
+</span></span></code></pre></div><p>The above command installs the Pyaudio package which &rsquo;listens&rsquo; for your voice</p>
+<h3 id="step-2-getting-started-with-the-code" class="relative group">Step 2: Getting started with the code </h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">speech_recognition</span> <span class="k">as</span> <span class="nn">sr</span> <span class="c1">#to recognise your audio</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">playsound</span>  <span class="c1"># to play saved mp3 file</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">gtts</span> <span class="kn">import</span> <span class="n">gTTS</span>  <span class="c1"># google text to speech which converts text into speech</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">os</span>  <span class="c1"># to save/open files</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">wolframalpha</span>  <span class="c1"># to calculate any query the user asks</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">random</span>   <span class="c1">#to play a random song which not even the user can predict</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>  <span class="c1"># to control browser operations</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">selenium.webdriver.chrome.options</span> <span class="kn">import</span> <span class="n">Options</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">from</span> <span class="nn">pygame</span> <span class="kn">import</span> <span class="n">mixer</span> <span class="c1">#to play songs</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">      <span class="k">def</span> <span class="nf">assistant_speaks</span><span class="p">(</span><span class="n">output</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">          <span class="k">global</span> <span class="n">num</span>
+</span></span><span class="line"><span class="cl">          <span class="c1"># num to rename every audio file</span>
+</span></span><span class="line"><span class="cl">          <span class="c1"># with different name to remove ambiguity</span>
+</span></span><span class="line"><span class="cl">          <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">          <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Jarvis : &#34;</span><span class="p">,</span> <span class="n">output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">toSpeak</span> <span class="o">=</span> <span class="n">gTTS</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">output</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s1">&#39;en-IN&#39;</span><span class="p">,</span> <span class="n">slow</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="c1"># saving the audio file given by google text to speech</span>
+</span></span><span class="line"><span class="cl">          <span class="n">file</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;.mp3&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="n">toSpeak</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="c1"># playsound package is used to play the same file.</span>
+</span></span><span class="line"><span class="cl">          <span class="n">playsound</span><span class="o">.</span><span class="n">playsound</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      <span class="k">def</span> <span class="nf">get_audio</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">          <span class="n">rObject</span> <span class="o">=</span> <span class="n">sr</span><span class="o">.</span><span class="n">Recognizer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">          <span class="n">audio</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">with</span> <span class="n">sr</span><span class="o">.</span><span class="n">Microphone</span><span class="p">()</span> <span class="k">as</span> <span class="n">source</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Speak..&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="c1"># recording the audio using speech recognition</span>
+</span></span><span class="line"><span class="cl">              <span class="n">audio</span> <span class="o">=</span> <span class="n">rObject</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">phrase_time_limit</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Stop.&#34;</span><span class="p">)</span>  <span class="c1"># limit 5 secs</span>
+</span></span><span class="line"><span class="cl">          <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">              <span class="n">text</span> <span class="o">=</span> <span class="n">rObject</span><span class="o">.</span><span class="n">recognize_google</span><span class="p">(</span><span class="n">audio</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en-IN&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;You : &#34;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="k">return</span> <span class="n">text</span>
+</span></span><span class="line"><span class="cl">          <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">              <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Could&#39;nt understand your audio, Please try again! :(&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="k">return</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">     <span class="k">def</span> <span class="nf">search_web</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">          <span class="n">options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">          <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;start-maximized&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;disable-infobars&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">chrome_options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">driver</span><span class="o">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="k">if</span> <span class="s1">&#39;youtube&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">              <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Opening in youtube!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="n">indx</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;youtube&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="n">query</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="n">indx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">              <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://www.youtube.com/results?search_query=&#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">query</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="k">elif</span> <span class="s1">&#39;wikipedia&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">              <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Opening Wikipedia&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="n">indx</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;wikipedia&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="n">query</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="n">indx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">              <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://en.wikipedia.org/wiki/&#34;</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">query</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="k">elif</span> <span class="s1">&#39;maps&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">              <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Opening Google Maps&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="n">indx</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;maps&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="n">query</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="n">indx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">              <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://www.google.com/maps/place/&#34;</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">query</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">              <span class="k">if</span> <span class="s1">&#39;google&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">indx</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;google&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">query</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="n">indx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://www.google.com/search?q =&#34;</span> <span class="o">+</span> <span class="s1">&#39;+&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">query</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">              <span class="k">elif</span> <span class="s1">&#39;search&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">indx</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;google&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">query</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="n">indx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://www.google.com/&#34;</span> <span class="o">+</span> <span class="s1">&#39;+&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">query</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">              <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                  <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;https://www.google.com/search?q=&#34;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">                             <span class="s1">&#39;+&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+</span></span></code></pre></div><p>The main functions of the program are the <code>get_audio()</code> and <code>assistant_speaks</code> functions. The get_audio() function &ldquo;listens&rdquo; to the audio(What you speak) through the microphone, the time limit is set to 7 sec (You can change it). The <code>assistant_speaks</code> function is used to speak out the output after the computer has processed your query. So now you probably understand how the assistant&rsquo;s going to work. If not, don&rsquo;t fret. I too didn&rsquo;t get it for the first time either :)😒</p>
+<h3 id="step-3-random-fun" class="relative group">Step 3: Random Fun </h3><p>We have used the <code>elif</code> function so that the assistant can answer on its own without searching the web or anything. Examples are queries like &ldquo;Who made you&rdquo;, &ldquo;Where do you live&rdquo; etc.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"> <span class="n">process_text</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s1">&#39;search&#39;</span> <span class="ow">in</span> <span class="nb">input</span> <span class="ow">or</span> <span class="s1">&#39;play&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># a basic web crawler using selenium</span>
+</span></span><span class="line"><span class="cl">            <span class="n">search_web</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;who made you&#34;</span> <span class="ow">in</span> <span class="nb">input</span> <span class="ow">or</span> <span class="s2">&#34;who created you&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;I have been created by Chivukula Virinchi.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;what is your name&#34;</span> <span class="ow">in</span> <span class="nb">input</span> <span class="ow">or</span> <span class="s2">&#34;who are you&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;Did I forget to introduce myself? I am your personal assistant. Assistance is my middle name.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;when is your birthday&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;I go through lots and lots of updates. So that&#39;s about 365-birthdays.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>        
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;where do you live&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;I’m stuck inside a device!! Help! Just kidding. I like it in here. Sometimes I hang out in the Cloud. It gives me a great view of the World Wide Web.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;do you sleep&#34;</span> <span class="ow">in</span> <span class="nb">input</span> <span class="ow">or</span> <span class="s2">&#34;when do you sleep&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;I take power naps when we aren&#39;t talking.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>                
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;self-destruct&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;Commencing Self-Destruct protocol in T-minus 2 seconds Boom! Actually I think I&#39;ll stick around&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;what do you think about me&#34;</span> <span class="ow">in</span> <span class="nb">input</span> <span class="ow">or</span> <span class="s2">&#34;what is your opinion about me&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;I think you&#39;re extremely cool :)&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="s2">&#34;sing a song&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">speak</span> <span class="o">=</span> <span class="s2">&#34;Here is a song I composed just for lovely people like you!&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="n">speak</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">r</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="n">playsound</span><span class="o">.</span><span class="n">playsound</span><span class="p">(</span><span class="s2">&#34;song&#34;</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="s2">&#34;.mp3&#34;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><p>PS: I didn&rsquo;t include the audio files with the names so you need to download them from the <a href="https://github.com/ChivukulaVirinchi/python-virinchi/tree/master/aijarvis_test/aijarvis_test">Github repo</a>.</p>
+<h3 id="step-4-doing-the-calculations" class="relative group">Step 4: Doing the Calculations </h3><p>Now it&rsquo;s time for some calculations. For this, we are going to use the <code>wolfram-alpha-api</code> which provides answers to litreally every question you ask.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">elif</span> <span class="s2">&#34;calculate&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">          <span class="n">app_id</span> <span class="o">=</span> <span class="s2">&#34;#app_id here&#34;</span>
+</span></span><span class="line"><span class="cl">          <span class="n">client</span> <span class="o">=</span> <span class="n">wolframalpha</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">app_id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">indx</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;calculate&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">          <span class="n">query</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="n">indx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">          <span class="n">res</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">query</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">          <span class="n">answer</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">results</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+</span></span><span class="line"><span class="cl">          <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;The answer is &#34;</span> <span class="o">+</span> <span class="n">answer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="k">elif</span> <span class="s1">&#39;open&#39;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="c1"># another function to open</span>
+</span></span><span class="line"><span class="cl">          <span class="c1"># different application availaible</span>
+</span></span><span class="line"><span class="cl">          <span class="n">open_application</span><span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">      <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="n">search_web</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">except</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Could not understand your audio, Please try again!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="mi">0</span>
+</span></span></code></pre></div><p>PS: You&rsquo;ll need a Wolfram Alpha developer app id which I have not included in this tutorial. <a href="http://products.wolframalpha.com/api/">Create your own APP ID here!</a>. Whenever you use this function, always use the word <strong>calculate</strong> so that your query can be redirected to the <code>wolfram-alpha-api</code></p>
+<h3 id="step-5-the-finishing-touch" class="relative group">Step 5: The finishing touch </h3><p>Now all that&rsquo;s left to do is to give a few finishing touches and then we are done. Add this final block to your main code and then you&rsquo;re done!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># assistant_speaks(&#34;What&#39;s your name?&#34;)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Virinchi&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># name = get_audio()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Hello, &#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;How can I help you &#34;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;?&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">text</span> <span class="o">=</span> <span class="n">get_audio</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">text</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="s2">&#34;goodnight&#34;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="ow">or</span> <span class="s2">&#34;bye&#34;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Ok bye, &#34;</span> <span class="o">+</span> <span class="n">name</span><span class="o">+</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># calling process text to process the query</span>
+</span></span><span class="line"><span class="cl">        <span class="n">process_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># function used to open application</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># present inside the system.</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">open_application</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;chrome&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Google Chrome&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">startfile</span><span class="p">(</span><span class="s1">&#39;/usr/bin/google-chrome-stable&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="s2">&#34;firefox&#34;</span> <span class="ow">in</span> <span class="nb">input</span> <span class="ow">or</span> <span class="s2">&#34;mozilla&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Opening Mozilla Firefox&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">startfile</span><span class="p">(</span><span class="s1">&#39;/usr/bin/firefox&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="s2">&#34;word&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Opening Microsoft Word&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">startfile</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013</span><span class="se">\\</span><span class="s1">Word 2013.lnk&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="s2">&#34;excel&#34;</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Opening Microsoft Excel&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">os</span><span class="o">.</span><span class="n">startfile</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Office 2013</span><span class="se">\\</span><span class="s1">Excel 2013.lnk&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">assistant_speaks</span><span class="p">(</span><span class="s2">&#34;Application not available&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span></code></pre></div><h3 id="step-6-and-then-youre-done" class="relative group">Step 6: And then you&rsquo;re done! </h3><p>Now you have officially finished building an AI assistant! All that&rsquo;s left to do now is to take it for a trial run and then show it off! You can run it in the terminal/cmd using <code>python3 filename.py</code>.</p>
+<h3 id="step-8-some-important-things-to-keep-in-mind" class="relative group">Step 8: Some important things to keep in mind </h3><ul>
+<li>You can customise the above code into your style and call it your own. With some experience of Python and a few tweaks here and there and its all yours. Customise it just the way you like it and make it yours. The below are just some examples to show you the power of AI and you are free to experiment.</li>
+<li>Whenever you need the assistant to take input from the <code>wolfram-alpha-api</code>
+you must include the word <strong>Calculate</strong> before the command.</li>
+<li>I have included the entire code and additional instructions in a Github Repo and you can download it from here. This file includes audio files which will be used to play the &lsquo;song&rsquo; the assistant sings.</li>
+<li>You are going to get errors a few times when you run it in the beginning. Debug each of them and make sure to check if each package has been installed properly.</li>
+<li>I have not included getting the google token. I have also created a Github Repo which include audio files and other important files for the assistant to work, which you can access <a href="https://github.com/ChivukulaVirinchi/python-virinchi/tree/master/aijarvis_test/aijarvis_test">here</a></li>
+</ul>
+<h3 id="step-8-example-commands" class="relative group">Step 8: Example Commands </h3><ul>
+<li><code>Youtube Chivukula Virinchi</code> This query searches Youtube for my channel</li>
+<li><code>Wikipedia ISRO</code> This query searches Wikipedia for &lsquo;ISRO&rsquo;</li>
+<li><code>Maps New Delhi</code> This query searches Maps for &lsquo;New Delhi&rsquo;</li>
+<li><code>Sing a Song</code> This query plays a random audio file from the list of songs.</li>
+<li><code>Where do you live</code> To this, the assistant replies &ldquo;that its stuck inside a device.</li>
+<li><code>Self-Destruct</code> The assistant replies &ldquo;Self-Destructing in 5 4 3 2 1 Boom!</li>
+<li><code>Calculate square root of 2</code> To this it says, the answer is 1.41421356237&hellip;</li>
+<li><code>Calculate 6 factorial</code> To this it replies, the answer is 720</li>
+<li><code>Cricket</code> For this command, it searches Google for &lsquo;Cricket&rsquo;</li>
+<li><code>Calculate the formula of Methyl Isocyanate</code> To this it says, the answer is C<sub>2</sub>H<sub>3</sub>NO</li>
+</ul>
+<h1 id="h1-classtext-center-happy-coding-h1" class="relative group"><h1 class="text-center"> Happy Coding! </h1> </h1>
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Vemuru Usha Ramani
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">Entrpreneur, Software Engineer, Open Source Enthusiast</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://in.linkedin.com/in/usha-ramani-vemuru-66286723"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://medium.com/@usharamani"
+          target="_blank"
+          aria-label="Medium"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/portfolios/solar-filter/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Solar Filter</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2020-01-19 00:00:00 &#43;0000 UTC">19 January 2020</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/portfolios/password-electric-lock-with-arduino/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Building an elecronic, keyless door lock</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2020-01-19 00:00:00 &#43;0000 UTC">19 January 2020</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2024
+            Vemuru Usha Ramani
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>
